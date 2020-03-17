@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Movies RecomSys</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="container-fluid" style="padding-top: 16px">
+        <div class="jumbotron">
+            <h1 class="display-5">Similar movies</h1>
+            <hr class="my-4">
+            <!-- Search bar -->
+            <nav class="navbar navbar-light bg-light" style="border-radius: 10px">
+                <a class="navbar-brand">Let's find your movies</a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" id="s-text" type="search" placeholder="Search" aria-label="Search" data-toggle="tooltip" data-placement="top" title="Entrer un film a chercher">
+                  <button class="btn btn-outline-success my-2 my-sm-0" id="s" type="submit">Search</button>
+                </form>
+              </nav>
+        </div>
+      </div>
+
+      <!-- Proposed movies -->
+      <div class="container-fluid">
+          <div class="row">
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                <div class="list-group text-center">
+                    <a href="#" class="movie list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                    <a href="#" class="movie list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="#" class="movie list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                    <a href="#" class="movie list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="list-group text-center">
+                    <a href="#" class="movie list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                    <a href="#" class="movie list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="#" class="movie list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                    <a href="#" class="movie list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+</body>
+    <script>
+        $("#s-text").tooltip({"trigger":"manual"})
+        require("./renderer.js")
+    </script>
+</html>
