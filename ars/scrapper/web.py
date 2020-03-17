@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from scrapper.movie import Movie
+from ars.scrapper.movie import Movie
 import pandas as pd
 
 # Online resources accessor

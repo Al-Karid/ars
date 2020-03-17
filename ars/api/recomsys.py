@@ -4,13 +4,17 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 import pandas as pd
 import numpy as np
+import os
 
 # Vectorizer
 cv = CountVectorizer(ngram_range=(1,1), strip_accents="unicode",stop_words=stopwords.words("french"))
 
 # Load data table
 # d = pd.read_csv("filmsallo_films.csv")
-d = pd.read_csv("data/big.csv")
+dirname = "/".join(os.path.abspath(__file__).split("/")[:-1])
+dirname = dirname+"/data/big.csv"
+
+d = pd.read_csv("big.csv")
 d.columns = ["id","title","released","producer","actor","plot","genre","thumbnail"]
 d = d.replace(np.nan, "NaN", regex=True)
 
