@@ -16,6 +16,6 @@ setuptools.setup(
         ],
     entry_points='''
     [console_scripts]
-    ars=scrapper.cli:ars
+    ars=ars.cli:ars
     '''
 )
