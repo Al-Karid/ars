@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    <style>
+      .c-img{
+        width: 64px;
+        height: 64px;
+      }
+      .ms-title{
+        text-transform: capitalize
+      }
+      .sm-item:hover{
+        border-color: blue !important;
+      }
+      .pl{
+        max-height: 200px !important;
+        overflow: hidden
+      }
+      .pl-txt{
+        height: 70px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        max-height: 100px;     
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation header -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="border-radius: 0px">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page" id="active">Library</li>
+        </ol>
+    </nav>
+
+    <!-- Selected movie infos -->
+    <div class="container-fluid">
+      <h1 id="mname"></h1>
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="img" src="" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title" id="m-title"></h3>
+              <p class="card-text" style="text-align: justify"><small id="m-plot" class="text-muted" style="font-size: 15px; color: black !important"></small></p>
+              <p class="card-text"><small id="m-year" class="text-muted"></small></p>
+              <p class="card-text"><small id="m-genre" class="text-muted"></small></p>
+              <p class="card-text"><small id="m-author" class="text-muted"></small></p>
+              <p class="card-text"><small id="m-actors" class="text-muted"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Similar movies cards list -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-6" id="smrack-1">
+                  
+            </div>
+            <div class="col col-md-6" id="smrack-2">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal code -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modal-body" style="text-align:justify">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="btnVoir" class="btn btn-primary">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+    <script>
+        require("./details.js")
+    </script>
+</html>

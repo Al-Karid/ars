@@ -1,8 +1,8 @@
 import flask
 from collections import defaultdict
 from flask import request, jsonify
-from recomsys import recommendations
-from recomsys import get_8_random_movies
+from ars.api.recomsys import recommendations
+from ars.api.recomsys import get_8_random_movies
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -33,4 +33,5 @@ def home():
 def random():
     return get_8_random_movies()
 
-app.run()
+def run():
+    app.run()
