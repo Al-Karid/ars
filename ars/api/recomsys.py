@@ -14,7 +14,7 @@ cv = CountVectorizer(ngram_range=(1,1), strip_accents="unicode",stop_words=stopw
 dirname = "/".join(os.path.abspath(__file__).split("/")[:-1])
 dirname = dirname+"/data/big.csv"
 
-d = pd.read_csv(dirname)
+d = pd.read_csv("big.csv")
 d.columns = ["id","title","released","producer","actor","plot","genre","thumbnail"]
 d = d.replace(np.nan, "NaN", regex=True)
 
