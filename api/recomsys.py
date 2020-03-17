@@ -10,7 +10,7 @@ cv = CountVectorizer(ngram_range=(1,1), strip_accents="unicode",stop_words=stopw
 
 # Load data table
 # d = pd.read_csv("filmsallo_films.csv")
-d = pd.read_csv("scrapper/big.csv")
+d = pd.read_csv("data/big.csv")
 d.columns = ["id","title","released","producer","actor","plot","genre","thumbnail"]
 d = d.replace(np.nan, "NaN", regex=True)
 
