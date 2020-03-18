@@ -6,6 +6,11 @@ import pandas as pd
 import numpy as np
 import os
 
+try:
+    nltk.download("stopwords")
+except Exception:
+    pass
+
 # Vectorizer
 cv = CountVectorizer(ngram_range=(1,1), strip_accents="unicode",stop_words=stopwords.words("french"))
 
