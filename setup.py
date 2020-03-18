@@ -14,7 +14,8 @@ setuptools.setup(
         "beautifulsoup4==4.8.2",
         "requests==2.21.0",
         "flask==1.1.1",
-        "scikit-learn==0.22.2.post1"
+        "scikit-learn==0.22.2.post1",
+        "nltk==3.4.5"
         ],
     entry_points='''
     [console_scripts]
