@@ -13,7 +13,8 @@ setuptools.setup(
         "pandas==1.0.1",
         "beautifulsoup4==4.8.2",
         "requests==2.21.0",
-        "flask==1.1.1"
+        "flask==1.1.1",
+        "scikit-learn==0.22.2.post1"
         ],
     entry_points='''
     [console_scripts]
