@@ -4,7 +4,7 @@
   "description": "Simple UI of AlloCine.fr-based recommander system",
   "main": "main.js",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0",
     "bootstrap": "^4.3.1",
     "axios": "^0.19.2",
