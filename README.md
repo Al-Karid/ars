@@ -43,7 +43,7 @@ cd ui
 npm install
 ```
 
-Run the UI (Note that <b>ars web serve<b> should be active)
+Run the UI (Note that <b>ars web serve</b> should be active)
 
 ```
 npm start
