@@ -20,7 +20,7 @@ Run the server
 ```python
 python3 -m pip install .
 ```
-Before you run the server you will need to install the stopwords from <br>Ipython</b> or as it pleases you
+Before you run the server you will need to install the stopwords from <b>Ipython</b> or as it pleases you
 ```
 import ntlk
 nltk.download("stopwords")
@@ -36,7 +36,7 @@ Above command open an API interface at <b>localhost:5000</b>
 
 ##### 2 Launch the UI
 
-Enter UI directory and install the dependencies
+Enter <b>ui</b> directory and install the dependencies
 
 ```
 cd ui
