@@ -20,9 +20,9 @@ Run the server
 ```python
 python3 -m pip install .
 ```
-Before you run the server you will need to install the stopwords from <b>Ipython</b> or as it pleases you
+Before you run the server you will need to install the stopwords with <b>Ipython</b> CLI or as it pleases you
 ```
-import ntlk
+import nltk
 nltk.download("stopwords")
 ```
 
@@ -43,7 +43,7 @@ cd ui
 npm install
 ```
 
-Run the UI
+Run the UI (Note that <b>ars web serve<b> should be active)
 
 ```
 npm start
